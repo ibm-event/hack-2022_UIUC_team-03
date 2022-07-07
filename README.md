@@ -4,9 +4,9 @@ Here is a list of all our attempts to beat the Polyadic Quantum Classifier (http
 
 ## COBYLA-based circuits
 Any algorithm that uses a quantum circuit defined by features and parameters that outputs a class. The parameters are optimized by using the COBYLA algorithm on the relevant loss function. These algorithms include: 
-- The original quantum circuit from the paper
-- An extended circuit with increased depth over the original
-- A QCNN approach (https://arxiv.org/abs/1810.03787) that uses measurements to make the circuit less trivial
+- The original quantum circuit from the paper,
+- An extended circuit with increased depth over the original,
+- A QCNN approach (https://arxiv.org/abs/1810.03787) to introduce nonlinearities into the circuit.
 
 ![qcnn_circuit](https://user-images.githubusercontent.com/49004387/177736899-82d6f91b-0b5d-459b-9a5a-095b7a4751c0.png)
 
