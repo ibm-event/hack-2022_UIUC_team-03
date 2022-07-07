@@ -1,3 +1,3 @@
-# [[%Event@name%]]: [[%Team@name%]]
+# [[HQAN Hackathon]]: [[Team 3]]
 
-Template for creating teams for large events e.g. Hackathons
+Here is a list of all our attempts to beat the Polyadic Quantum Classifier (https://arxiv.org/abs/2007.14044) using different circuits and methods.
