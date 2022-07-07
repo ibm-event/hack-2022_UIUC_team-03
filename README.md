@@ -4,13 +4,19 @@ Here is a list of all our attempts to beat the Polyadic Quantum Classifier (http
 
 ## COBYLA-based circuits
 Any algorithm that uses a quantum circuit defined by features and parameters that outputs a class. The parameters are optimized by using the COBYLA algorithm on the relevant loss function. These algorithms include: 
-- The original quantum circuit from the paper,
-- An extended circuit with increased depth over the original,
+- The original quantum circuit from the paper:
+
+![iris_circuit](https://user-images.githubusercontent.com/49004387/177741855-f2b7559c-db8d-4847-a29d-4423fe8ae223.png)
+
+- An extended circuit with increased depth over the original:
+
+![iris_ext_circuit](https://user-images.githubusercontent.com/49004387/177741894-ad64a0e0-d905-497b-bc4a-6eec6060795f.png)
+
 - A QCNN approach (https://arxiv.org/abs/1810.03787) to introduce nonlinearities into the circuit.
 
 ![qcnn_circuit](https://user-images.githubusercontent.com/49004387/177736899-82d6f91b-0b5d-459b-9a5a-095b7a4751c0.png)
 
-This is the circuit used for QCNN, with feature variables F1-F4, P1-P10 (the parameterized gates are the same as in the Polyadic Quantum Classifier paper, i.e. a Z-rotation in between two half-X gates.
+Where the parameterized gates are the same as in the Polyadic Quantum Classifier paper, i.e. a Z-rotation in between two half-X gates; F1-F4 are the feature variables, and P1-P12 are the parameter variables.
 
 There is a version of the file which tests all three methods for 30 different random choices of training samples (making sure that the number of training points per class is even), and a version which tests all three methods for 5 different starting parameters in the optimization function. 
 
