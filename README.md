@@ -26,3 +26,5 @@ Based on https://arxiv.org/abs/1804.11326, this algorithm uses quantum circuits 
 The kernel is the overlap between two wavefunctions created by a parameterized quantum circuit - the overlap between features [1,2,3,4] and [5,6,7,8] can be computed with the circuit below:
 
 ![kernel_circuit](https://user-images.githubusercontent.com/49004387/177737063-ad9e8688-ae01-488a-9611-67ae2c7d7c97.png)
+
+Where ZZ(N) is an Ising rotation e^(i Sz_i Sz_j p_N) for parameter p_N and sites i,j.
